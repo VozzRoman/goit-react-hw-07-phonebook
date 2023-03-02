@@ -8,8 +8,9 @@ display: block;
 
 export const EnterName = styled.input`
 	display: flex;
-	width: 95%;
-	height: 25px;
+	box-sizing: border-box;
+	width: 100%;
+	height: 35px;
 	border-radius: 4px;
 	padding: 0 10px;
 	font-size: 18px;

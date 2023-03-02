@@ -2,11 +2,12 @@ import { Button, EnterName, FildName, Forms } from './ContactFormStyle';
 import { useDispatch, useSelector } from 'react-redux';
 import { useForm } from 'react-hook-form';
 import { addContact } from 'redux/operations/operations';
-import { getContactsList } from 'redux/selectors/selectors';
+import { selectContactsList } from 'redux/selectors/selectors';
+
 
 export const ContactForm = () => {
   const dispatch = useDispatch();
-  const contacts = useSelector(getContactsList);
+  const contacts = useSelector(selectContactsList);
   //   console.log(addContact());
   const {
     register,

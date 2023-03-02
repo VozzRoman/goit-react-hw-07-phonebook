@@ -7,7 +7,7 @@ import { selectFilteredContacts } from 'redux/selectors/selectors';
 export const ContactList = () => {
 
   const contactsList = useSelector(selectFilteredContacts);
-  console.log(contactsList);
+//   console.log(contactsList);
 
   return (
     <>

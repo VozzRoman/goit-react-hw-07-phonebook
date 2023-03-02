@@ -14,3 +14,11 @@ export const selectError = state => {
 	return state.contacts.error
 }
 export const selectFilterValue = state => state.filter.filter;
+
+
+export const selectFilteredContacts = state => {
+	const contacts = selectContactsList(state);
+	const inputData = selectFilterValue(state);
+
+	return contacts.filter(contact => contact.name.toLowerCase().includes(inputData));
+}
